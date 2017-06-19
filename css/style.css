@@ -1,0 +1,20 @@
+.nav-wrapper {
+  margin-left: 10px;
+}
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  height: 450px;
+  background-size: cover;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+i {
+  vertical-align: bottom;
+}
