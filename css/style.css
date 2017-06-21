@@ -18,3 +18,14 @@ h1 {
 i {
   vertical-align: bottom;
 }
+.right {
+  text-align: right;
+}
+
+.margin_right {
+  margin-right: auto;
+}
+.center {
+  flex-direction: column;
+  justify-content: center;
+}

@@ -22,7 +22,7 @@
   </nav>
   <main class="section container">
     <div class="row">
-      <div class="col s6">
+      <div class="col s7">
         <h4>Menu</h4>
         <div class="row">
         <div class="col s6">
@@ -31,11 +31,11 @@
               <img src="img/burger.jpg">
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <span class="card-title">Royal with Cheese</span>
+              <p>$8.99</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">Add to Order</a>
             </div>
           </div>
         </div>
@@ -45,51 +45,141 @@
               <img src="img/pizza.jpg">
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <span class="card-title">Arugula Pie</span>
+              <p>$11.99</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">Add to Order</a>
             </div>
           </div>
         </div>
       </div>
+    <div class="row">
+    <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/ribs.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Smoked Swine</span>
+          <p>$14.99</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Add to Order</a>
+        </div>
+      </div>
     </div>
-      <div class="col s6">
+    <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/ice_cream.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Ice Cream Biscuit</span>
+          <p>$7.99</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Add to Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col s5">
         <h4>Order</h4>
-      </div>
-    </div>
-      <div class="row">
-      <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/burger.jpg">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="right">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Royal with Cheese</td>
+              <td class="right">$8.99</td>
+            </tr>
+            <tr>
+              <td>Argula Pie</td>
+              <td class="right">$11.99</td>
+            </tr>
+            <tr>
+              <td>Smoked Swine</td>
+              <td class="right">$14.99</td>
+            </tr>
+            <tr>
+              <td>Ice Cream Biscuit</td>
+              <td class="right">$7.99</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="container right section">
+          <div class="row">
+            <div class="col s6 offset-6">
+              <div>Subtotal</div>
+            </div>
+            <div class="col s6 offset-6 right">
+              <div>$43.96</div>
+            </div>
           </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
+          <div class="row">
+            <div class="col s6 offset-6">
+              <div>Tax</div>
+            </div>
+            <div class="col s6 offset-6 right">
+              <div>$4.40</div>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col s6 offset-6">
+              <div>Total</div>
+            </div>
+            <div class="col s6 offset-6 right">
+              <div>$48.36</div>
+            </div>
           </div>
         </div>
+
+
+        <div class="section">
+        <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="pink-text accent-2 material-icons prefix">account_circle</i>
+              <input value="Bill Gates" id="name" type="text" class="validate">
+              <label class="active" for="name">Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="pink-text accent-2 material-icons prefix">phone</i>
+              <input value="206-555-5555" id="icon_telephone" type="tel" class="validate">
+              <label class="active" for="icon_telephone">Phone number</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="pink-text accent-2 material-icons prefix">business</i>
+              <textarea id="address" class="materialize-textarea">One Microsoft Way &#10;Redmond, WA 98052-6399</textarea>
+              <label class="active" for="address">Address</label>
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/pizza.jpg">
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
+
     </div>
 
+    </div>
+
+    </div>
+    <div class="row">
+      <div class="col s5 offset-6 right">
+        <div class="valign-wrapper center">
+          <a class="btn-large pink accent-2" href="order.html">PLACE AN ORDER</a>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="page-footer blue darken-3">
             <div class="container">
