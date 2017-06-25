@@ -3,9 +3,11 @@ let orderField = $('.order');
 let subTotal = $('.sub');
 let tax = $(".tax");
 let tot = $(".tot");
+let clientData = $('.clientData');
 
 // event handlers
 $('.card').on('click', 'a', itemInfo);
+// $('.shit').on('click', 'a', placeOrder);  WTF
 
 
 
@@ -38,4 +40,13 @@ function updateTaxAndTotal(subTotal){
   let taxable = subTotal.text();
   tax.text("$" + (Number(taxable.slice(1, taxable.length)) * 0.096).toFixed(2));
   tot.text("$" + ((Number(taxable.slice(1, taxable.length)) * 0.096) + (Number(taxable.slice(1, taxable.length)))).toFixed(2));
+}
+
+function placeOrder(event) {
+  // WTFWTWTF
+  console.log("Fuck!")
+  // if (orderField.text() === ""){
+  //   Materialize.toast('You have not ordered anything!', 4000)
+  // }
+  // else if ()
 }
