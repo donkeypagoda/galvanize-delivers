@@ -7,7 +7,7 @@ let clientData = $('.clientData');
 
 // event handlers
 $('.card').on('click', 'a', itemInfo);
-// $('.shit').on('click', 'a', placeOrder);  WTF
+$('.order').on('click', placeOrder);
 
 
 
@@ -30,7 +30,7 @@ function updateSubTotal(itemPrice){
     updateTaxAndTotal(subTotal);
   }
   else {
-    let newTotes = Number(totes) + Number(itemPrice.slice(1, itemPrice.length))
+    let newTotes = Number(totes) + Number(itemPrice.slice(1, itemPrice.length));
     subTotal.text("$" + newTotes.toFixed(2));
     updateTaxAndTotal(subTotal);
   }
@@ -43,10 +43,9 @@ function updateTaxAndTotal(subTotal){
 }
 
 function placeOrder(event) {
-  // WTFWTWTF
-  console.log("Fuck!")
-  // if (orderField.text() === ""){
-  //   Materialize.toast('You have not ordered anything!', 4000)
-  // }
-  // else if ()
+  if (orderField.children().text() === ""){
+    Materialize.toast("You haven't ordered anything!", 4000);
+    console.log("fuck");
+  }
+
 }
