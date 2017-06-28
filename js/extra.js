@@ -11,14 +11,21 @@ $('.order').on('click', placeOrder);
 
 
 
+
 // Functions
 function itemInfo(event){
   let itemToAdd = $(event.target).parent('.card-action').siblings('.card-content').children('span').text();
   let itemPrice = $(event.target).parent('.card-action').siblings('.card-content').children('p').text();
   let itemRow = $('<tr>');
+  // let itemRemove = $('<i>');
+  // itemRemove.attr("class", "right accent-2 material-icons prefix");
+  // itemRemove.text("delete");
+  // let itemRemoveTd = $('<td>')
+  // itemRemoveTd.append(itemRemove);
   let itemName = $('<td>').text(itemToAdd);
   itemRow.append(itemName);
   itemRow.append($('<td>').text(itemPrice).attr("class", "rightness"));
+  // itemRow.append(itemRemoveTd);
   orderField.append(itemRow);
   updateSubTotal(itemPrice);
 }
@@ -48,13 +55,13 @@ function placeOrder(event) {
     Materialize.toast("You haven't ordered anything!", 4000);
   }
   else if (clientData.children().children().children('input[id="name"]').val() === ""){
-    Materialize.toast("Please fill out your personal information.", 4000);
+    Materialize.toast("Please fill out name.", 4000);
   }
   else if (!/[0-9]{10}/.test(clientData.children().children().children('input[type="tel"]').val())){
     Materialize.toast("Please enter a valid 10 digit phone number.", 4000);
   }
   else if (clientData.children().children().children('textarea').val() === "") {
-    Materialize.toast("Please fill out your personal information.", 4000);
+    Materialize.toast("Please fill out your address information.", 4000);
   }
   else{
     Materialize.toast("Thanks for your order!", 4000);
